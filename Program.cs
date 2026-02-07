@@ -16,6 +16,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/", () =>
+{
+    return "Hello World! Welcome to my API! I am a software developer with a passion for creating " +
+    "innovative solutions. I have experience in various programming languages and frameworks, " +
+    "and I enjoy tackling complex problems. Feel free to explore my API and see what I have to offer!";
+});
 
 app.MapGet("/test", () =>
 {
